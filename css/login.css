@@ -1,0 +1,101 @@
+h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.title {
+    font-size: 3em;
+    text-align: center;
+    margin-top: 100px;
+    font-family: 'Nunito', sans-serif;
+}
+
+.title h1 {
+    font-family: 'Nunito', sans-serif;
+    font-size: 41px;
+    line-height: 47px;
+    margin: 75px 0;
+}
+
+.main {
+    display: grid;
+    grid-template-rows: 80vh;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    /* padding: 10px; */
+}
+
+.login,
+.search {
+    padding: 20px;
+}
+
+
+/* form */
+.center,
+select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    display: block;
+}
+
+input[type=text],
+input[type=password],
+select {
+    background-color: #ad95956e;
+    color: black;
+    border: none;
+    font-size: 100%;
+    letter-spacing: 0.2em;
+    width: 80%;
+    margin: 25px auto;
+
+}
+
+input[type=submit] {
+    background-color: #d2241f;
+    color: white;
+    border: none;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    font-size: 20px;
+    width: 80%;
+    margin: 40px auto;
+    border-radius: 20px;
+
+
+}
+
+.login_btn:hover {
+    background-color: #bb4a1d;
+    opacity: 0.6;
+    transition: 1s;
+    border-radius: 20px;
+    color: white
+}
+
+.login fieldset {
+
+    background-color: white;
+    font-size: 20px;
+    border-radius: 10px;
+    width: 30%;
+    margin: auto;
+}
+
+.login_btn {
+    background-color: #d2241f;
+    color: white;
+    border: none;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    margin: 40px auto;
+    display: block;
+    padding: 10px;
+    width: 80%;
+    font-size: 20px;
+    font-family: monospace;
+    border-radius: 20px;
+}

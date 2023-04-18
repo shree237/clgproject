@@ -1,0 +1,45 @@
+<html>
+
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="./css/font-awesome-4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="./css/body-nav-footer.css">
+    <link rel="stylesheet" href="./css/dashbord.css">
+    <link rel="stylesheet" href="./css/form.css">
+    <link rel="stylesheet" href="./css/login.css">
+
+</head>
+
+<body>
+
+    <div class="nav">
+        <div class="logo">
+            <img src="images/pvgcoet-logo.jpeg" alt=""
+                style="height: 50px;border-radius: 5px;margin-left: 10px;margin-top: 5px;width: 100%;">
+        </div>
+        <div class="navlist">
+            <ul>
+                <!-- <li class="li"><a href="view_results.php" class="a">Import</a></li> -->
+                <li class="li"><a href="result_analysis.html" class="a">Analysis</a></li>
+                <button type="submit" onclick="logout()">Logout</button>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="outer-container" style='margin-top:100px'>
+        <form>
+
+
+            <div class="input-pdf">
+                <label class="center" for="file">Choose File</label>
+                <input class="center" type="file" name="pdf_file">
+                <button class="center" type="submit" id="submit" name="insem">Import INSEM PDF</button>
+            </div>
+
+    </div>
+    </form>
+
+</body>
+
+</html>

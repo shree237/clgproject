@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam&family=Merriweather:wght@700&family=Nunito&family=Poppins:wght@300&family=Roboto+Condensed:wght@300&display=swap');
+
+
+html{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(125deg, #ECFCFF 0%, #ECFCFF 40%, #B2FCFF calc(40% + 1px), #B2FCFF 60%, #5EDFFF calc(60% + 1px), #5EDFFF 72%, #3ebbff calc(72% + 1px), #3E64FF 100%);
+    box-sizing: border-box;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    
+
+}
+
+.logo img{
+    height: 50px; 
+    border-radius: 5px;
+    margin-left: 10px; 
+    margin-top: 5px; 
+    width: 100%;
+}
+
+/* -------- Navigation Bar  ------------ */
+.nav{
+    background-color: #393e46;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Nunito', sans-serif;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    height: 60px;
+    z-index: 9;
+}
+
+ul{
+    list-style-type: none;
+    margin: 5px 0;
+    padding: 5px;
+    display: flex;
+    overflow: hidden;
+    justify-content: space-around;
+}
+
+li a{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+   
+    display: flex;
+    align-items: center;
+    padding: 5px 30px;
+    font-size: 20px;
+}
+
+li a:hover{
+    background-color: #bb4a1d;
+    transition: 1s;
+    border-radius: 20px;
+}
+
+/*  -------- Nav Ends   --------------*/
+
+
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 1px 0;
+    background-color: #393e46e6;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    margin-top: 50px;
+}
+
+
+   

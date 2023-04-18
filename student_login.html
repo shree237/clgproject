@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index Page</title>
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="./css/body-nav-footer.css">
+
+</head>
+
+<body>
+
+    <div class="nav">
+        <div class="logo">
+            <img src="images/pvgcoet-logo.jpeg" alt="" style="
+                height: 50px;
+                border-radius: 5px;
+                margin-left: 10px;
+                margin-top: 5px;
+                width: 100%;">
+        </div>
+
+        <div class="navlist">
+            <ul class="ul">
+                <li class="li"><a href="index.html" class="a">Home</a></li>
+                <li class="li"><a href="admin_login.html" class="a">Administrator</a></li>
+                <li class="li"><a href="student_login.html" class="a">Student</a></li>
+                <li class="li"><a href="#" class="a">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="title">
+        <h1>Student Result Analysis System</h1>
+    </div>
+
+    <div class="login">
+        <form action="./student.php" method="get">
+            <fieldset>
+                <legend class="heading">Student</legend>
+                <h2>Result</h2>
+
+                <!-- <?php
+                        include('init.php');
+                        $class_result=mysqli_query($conn,"SELECT `name` FROM `class`");
+                            echo '<select name="class">';
+                            echo '<option selected disabled>Select Class</option>';
+                        while($row = mysqli_fetch_array($class_result)){
+                            $display=$row['name'];
+                            echo '<option value="'.$display.'">'.$display.'</option>';
+                        }
+                        echo'</select>'
+                    ?> -->
+
+                <input class="center" type="text" name="rn" placeholder="Seat No">
+                <input class="center" type="submit" value="Get Result">
+            </fieldset>
+        </form>
+    </div>
+
+
+</body>
+
+</html>

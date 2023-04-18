@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index Page</title>
+    <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="./css/body-nav-footer.css">
+</head>
+
+<body>
+
+    <div class="nav">
+        <div class="logo">
+            <img src="images/pvgcoet-logo.jpeg" alt=""
+                style="height: 50px;border-radius: 5px;margin-left: 10px;margin-top: 5px;width: 100%;">
+        </div>
+
+        <div class="navlist">
+            <ul class="ul">
+                <li class="li"><a href="index.html" class="a">Home</a></li>
+                <li class="li"><a href="admin_login.html" class="a">Administrator</a></li>
+                <li class="li"><a href="Student_login.html" class="a">Student</a></li>
+                <li class="li"><a href="#" class="a">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="title">
+        <h1>Student Result Analysis System</h1>
+    </div>
+
+    <!-- <div class="main"> -->
+    <div class="login">
+        <form>
+            <fieldset>
+                <legend class="heading">Administrator</legend>
+                <h2>Login</h2>
+                <input class="center" type="text" id="username" placeholder="Email" autocomplete="off">
+                <input class="center" type="password" id="password" placeholder="Password" autocomplete="off">
+                <button class="login_btn" type="button" onclick="login()">Login</button>
+            </fieldset>
+        </form>
+    </div>
+
+    <script>
+
+        function login() {
+            let username = document.getElementById("username").value;
+            let password = document.getElementById("password").value;
+
+            if (username === "admin" && password === "123") {
+                alert("login successfully")
+                window.location.href = "dashboard.html"; // redirect to dashboard page
+            } else {
+                alert("Invalid username or password. Please try again.");
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>

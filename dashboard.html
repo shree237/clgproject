@@ -1,0 +1,64 @@
+<?php
+include("init.php");
+
+$no_of_students = mysqli_fetch_array(mysqli_query($conn, "SELECT COUNT(*) FROM `students`"));
+$no_of_result = mysqli_fetch_array(mysqli_query($conn, "SELECT COUNT(*) FROM `
+`"));
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/dashbord.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="./css/font-awesome-4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="./css/body-nav-footer.css">
+    <title>Dashboard</title>
+
+</head>
+
+<body>
+
+    <div class="nav">
+        <div class="logo">
+            <img src="images/pvgcoet-logo.jpeg" alt="">
+        </div>
+        <div class="navlist">
+            <ul>
+                <li class="li"><a href="import_result.html" class="a">Import</a></li>
+                <li class="li"><a href="result_analysis.html" class="a">Analysis</a></li>
+                <button type="submit" onclick="logout()">Logout</button>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="info">
+        <?php
+        echo '<p>Number of students:' . $no_of_students[0] . '</p>';
+        echo '<p>Number of results:' . $no_of_result[0] . '</p>';
+        ?>
+    </div>
+    <script>
+        function logout() {
+            // clear session data from cookies
+            // document.cookie = "PHPSESSID=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+
+            // redirect to login page
+            window.location.href = "admin_login.html";
+
+            // show logout message (optional)
+            alert("Logout successful");
+        }
+
+    </script>
+</body>
+
+</html>
+
+<?php
+include('session.php');
+?>

@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam&family=Merriweather:wght@700&family=Nunito&family=Poppins:wght@300&family=Roboto+Condensed:wght@300&display=swap');
+
+
+
+
+
+/*  ------------ About College and their Profile  --------------------  */
+
+.clg{
+    display: flex;
+    align-items:center;
+    flex-wrap:wrap;
+    justify-content: space-around;
+    margin-top: 100px;
+ 
+}
+.clginfo{
+    font-family: 'Nunito', sans-serif;
+
+}
+.clginfo img{
+    width: 600px;
+    height: 400px;
+    padding: 20px 0;
+    border-radius: 50px 0px;
+}
+h2{
+    font-family: 'Poppins', sans-serif;
+    /* margin-left: 20px; */
+}
+.clginfo h1{
+    font-size: 41px;
+    line-height: 47px;
+    margin: 25px 0;
+}
+
+.title {
+    display: flex;
+    font-size: 3em;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+}
+
+.about{
+    padding: 10px;
+    box-shadow: 5px 6px 11px 9px #03081933;
+}
+
+.about span {
+    font-size: 20px;
+}
+.about h2{
+    margin: 10px 75px;
+
+}
+.about p{
+    font-size: 15px;
+    line-height: 1.4;
+    font-family: system-ui;
+    /* padding: 25px; */
+    background: #bd642f00;
+    margin: 10px 50px;
+    font-family: 'Kalam', cursive;
+}
+
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #f44336;
+    padding: 7px 43px;
+    margin: 40px 0;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 27px;
+    background: #f44336;
+    position: relative;
+    cursor: pointer;
+}
+.hero-btn:hover{
+    border: 1px solid #f44336;
+    /* background: rgba(#f44336, 0.6); */
+    opacity: 0.6;
+    transition: 1s;
+    border-radius: 20px;
+}
